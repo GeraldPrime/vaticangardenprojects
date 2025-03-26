@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
+    <!-- <div class="col-xl-6 col-lg-7"> -->
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="description" content="">
@@ -28,6 +30,16 @@
     <link rel="stylesheet" href="assets/vendor/slick/css/slick.min.css">
     <!-- Main Style -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Add this CSS for styling -->
+    <style>
+        .office-box {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .office-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        }
+    </style>
     
 </head>
 <body>
@@ -131,7 +143,8 @@
         <!-- What We Do Area Start -->
         <section class="what-we-do-area pt-120">
             <div class="container">
-                <div class="row align-items-center">
+                <!-- <div class="row align-items-center"> -->
+                <div class="row gap-40">
                     <div class="col-xl-6 col-lg-5">
                         <div class="section-title rmb-55 wow fadeInUp delay-0-3s">
                             <span class="sub-title mb-50 rmb-30 wow fadeInUp delay-0-2s">what we do</span>
@@ -148,10 +161,40 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-lg-5 mb-30">
+                        <h5>VISION STATEMENT</h5>
+                        <div class="section-text mt-45 wow fadeInUp delay-0-4s">
+                            
+                            <p>To be the cornerstone of real estate excellence in Nigeria, setting the benchmark for innovation, sustainability, and trust that create a global legacy of prosperity and beauty for generations to come. </p>
 
-                    <div class="col-xl-6 col-lg-7">
+                        </div> <br>
+
+                        <h5>MISSION  STATEMENT</h5>
+                        <div class="section-text mt-45 wow fadeInUp delay-0-4s">
+                            <p>Our mission is to deliver exceptional value to our clients by offering tailored real estate solutions that meet their needs, whether for investment, living, or business purposes. We are guided by a commitment to quality and community development.</p>
+                        </div> <br>
+                        
+                        <h5>OUR CORE VALUES</h5>
+                        <div class="section-text mt-45 wow fadeInUp delay-0-4s">
+                            <p>✅ SERVICE</p>
+                            <p>✅ EXCELLENCE</p>
+                            <p>✅ NTEGRITY</p>
+                            <p>✅ RESPONSIBILITY</p>
+                            <p>✅ ACCOUNTABILITY </p>
+                        </div> 
+                        
+                        
+                    </div>
+                    <div class="section-title rmb-55 wow fadeInUp delay-0-3s">
+                        <span class="sub-title mb-50 rmb-30 wow fadeInUp delay-0-2s">Benefits from our estates and buildings</span>
+                        
+                    </div>
+                    
+
+                    <div class="">
                         <div class="row gap-40">
                             <div class="col-sm-6">
+                                <!-- <div class="what-we-do-item wow fadeInUp delay-0-2s"> -->
                                 <div class="what-we-do-item wow fadeInUp delay-0-2s">
                                     <div class="icon">
                                         <i class="fal fa-badge-dollar"></i>
@@ -166,7 +209,7 @@
                                 <div class="what-we-do-item wow fadeInUp delay-0-4s">
                                     <div class="icon">
                                         <!-- <img src="assets/images/icons/wwd-icon2.png" alt="Icon"> -->
-                                        <i class="fal fa-badge-dollar"></i>
+                                        <i class="fal fa-fan-table"></i>
                                     </div>
                                     <div class="content">
                                         <h6>Ventilation and space</h6>
@@ -244,11 +287,11 @@
                             <div class="col-sm-6">
                                 <div class="what-we-do-item wow fadeInUp delay-0-4s">
                                     <div class="icon">
-                                        <i class="fal fa-road"></i>
+                                        <i class="fal fa-solar-panel"></i>
                                     </div>
                                     <div class="content">
-                                        <h6>Good Road Network</h6>
-                                        <p>Seamless connectivity is essential! Our properties are located in areas with well-paved roads, easy access to major highways, and smooth transportation routes</p>
+                                        <h6>Solar Street Lamps & Poles</h6>
+                                        <p>We prioritize eco-friendly and energy-efficient solutions with solar-powered street lights that provide bright, reliable, and sustainable illumination. </p>
                                     </div>
                                 </div>
                             </div>
@@ -258,6 +301,68 @@
             </div>
         </section>
         <!-- What We Do Area End -->
+         
+
+        <!-- office location section -->
+        <section class="offices-section py-5 bg-light">
+            <div class="container">
+                <div class="text-center mb-4">
+                    <h2 class="fw-bold"> Our Offices</h2><!-- 📍 -->
+                    <p class="text-muted">Find us in multiple locations across Nigeria. We're always within reach!</p>
+                </div>
+                <div class="row">
+                    <!-- Head Office -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="office-box p-4 shadow-sm bg-white rounded text-center">
+                            <i class="fas fa-building fa-2x text-primary mb-3"></i>
+                            <h5 class="fw-bold">Head Office</h5>
+                            <p>23 Liberty Estate Phase 2, By Library Bustop, Independence Layout, Enugu.</p>
+                            <p><i class="fas fa-phone-alt"></i> 07083600327</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Lagos Office -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="office-box p-4 shadow-sm bg-white rounded text-center">
+                            <i class="fas fa-city fa-2x text-primary mb-3"></i>
+                            <h5 class="fw-bold">Lagos Office</h5>
+                            <p>3 Nwachukwu Drive, Besides Meal and Event, Opposite Atunike Plaza, Okota Road, Lagos.</p>
+                            <p><i class="fas fa-phone-alt"></i> 09084823980</p>
+                        </div>
+                    </div>
+        
+                    <!-- Asaba Office -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="office-box p-4 shadow-sm bg-white rounded text-center">
+                            <i class="fas fa-map-marker-alt fa-2x text-primary mb-3"></i>
+                            <h5 class="fw-bold">Asaba Office</h5>
+                            <p>Suite 26, De-Park Plaza, 135 Ibusa Road, Off Coker Bustop, Asaba, Delta State.</p>
+                            <p><i class="fas fa-phone-alt"></i> 07017827131</p>
+                        </div>
+                    </div>
+        
+                    <!-- Awka Office -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="office-box p-4 shadow-sm bg-white rounded text-center">
+                            <i class="fas fa-landmark fa-2x text-primary mb-3"></i>
+                            <h5 class="fw-bold">Awka Office</h5>
+                            <p>Hall Mart Plaza, By Udoka Bustop, By Kwata Bridge, Awka, Anambra State.</p>
+                            <p><i class="fas fa-phone-alt"></i> 08135570158</p>
+                        </div>
+                    </div>
+        
+                    <!-- Owerri Office -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="office-box p-4 shadow-sm bg-white rounded text-center">
+                            <i class="fas fa-home fa-2x text-primary mb-3"></i>
+                            <h5 class="fw-bold">Owerri Office</h5>
+                            <p>Plot CR/27 House Area V, By Holy Rosary Bustop, New Owerri, Port Harcourt Expressway, Owerri, Imo State.</p>
+                            <p><i class="fas fa-phone-alt"></i> 07039146609</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         
         
         <!-- Team Area start -->
@@ -391,38 +496,39 @@
                     <div class="col-xl-7 col-lg-9">
                         <div class="section-title text-center mb-55 wow fadeInUp delay-0-4s">
                             <span class="sub-title mb-60 rmb-40 wow fadeInUp delay-0-2s">reviews</span>
-                            <h2>What Our Clients Says</h2>
+                            <h2>What Our Clients Say</h2>
                         </div>
                     </div>
                 </div>
                 <div class="testimonials-slider-two mb-115">
                     <div class="testimonial-item style-two wow fadeInUp delay-0-2s">
                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-                        <div class="author-speech">“Venenatis urna cursus eget nunc scelerisque viverra mauris. Lectus urna duis convallis convallis tellus. Volutpat commodo sed egestas egestas fringilla. Porttitor leo a diam sollicitudin”.</div>
-                        <h6>Jordyn Lipshutz</h6>
-                        <span class="designations">Office Manager</span>
+                        <div class="author-speech">“Finding a home was stress-free with them! The process was smooth, and I got a great deal. Highly recommend their services!”</div>
+                        <h6>Chinedu Okafor</h6>
+                        <span class="designations">Entrepreneur</span>
                     </div>
                     <div class="testimonial-item style-two wow fadeInUp delay-0-4s">
                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-                        <div class="author-speech">“Quis vel eros donec ac odio tempor orci dapibus ultrices. Interdum varius sit amet mattis vulputate enim. Vel eros donec ac odio. Pulvinar mattis nunc sed blandit libero volutpat sed cras”.</div>
-                        <h6>Ruben Vetrov</h6>
-                        <span class="designations">Office Manager</span>
+                        <div class="author-speech">“Their estates are well-planned, with good roads and constant power. I’m really happy with my investment!”</div>
+                        <h6>Amaka Nwosu</h6>
+                        <span class="designations">Banker</span>
                     </div>
                     <div class="testimonial-item style-two wow fadeInUp delay-0-6s">
                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-                        <div class="author-speech">“Venenatis urna cursus eget nunc scelerisque viverra mauris. Lectus urna duis convallis convallis tellus. Volutpat commodo sed egestas egestas fringilla. Porttitor leo a diam sollicitudin”.</div>
-                        <h6>Jordyn Lipshutz</h6>
-                        <span class="designations">Office Manager</span>
+                        <div class="author-speech">“From my first inquiry to moving in, their team was professional and supportive. The security and drainage systems are top-notch!”</div>
+                        <h6>Kunle Balogun</h6>
+                        <span class="designations">Engineer</span>
                     </div>
                     <div class="testimonial-item style-two wow fadeInUp delay-0-8s">
                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-                        <div class="author-speech">“Quis vel eros donec ac odio tempor orci dapibus ultrices. Interdum varius sit amet mattis vulputate enim. Vel eros donec ac odio. Pulvinar mattis nunc sed blandit libero volutpat sed cras”.</div>
-                        <h6>Ruben Vetrov</h6>
-                        <span class="designations">Office Manager</span>
+                        <div class="author-speech">“I love the estate’s clean environment, reliable water supply, and spacious layout. It’s the best real estate decision I’ve made!”</div>
+                        <h6>Fatima Bello</h6>
+                        <span class="designations">Doctor</span>
                     </div>
                 </div>
             </div>
         </section>
+        
         <!-- Reviews Area end -->
         
         
@@ -433,59 +539,57 @@
                     <div class="row gap-100 justify-content-center">
                         <div class="col-xl-4 col-lg-7">
                             <div class="section-title text-white mb-50">
-                                <span class="sub-title mb-50 rmb-20">DEVELOPER</span>
-                                <h2>Do you want to visit us?</h2>
+                                <span class="sub-title mb-50 rmb-20">Potential Client?</span>
+                                <h2>Reach Out</h2>
                             </div>
                         </div>
                         <div class="col-xl-3 col-lg-5">
                             <div class="footer-top-text mb-50">
-                                121 King Street, Melbourne Victoria 3000 Australia <br>
-                                <a class="d-inline-block mt-30" href="#"><small><i class="fas fa-location"></i> Look at the map</small></a>
+                                23 Liberty Estate Phase 2 by library bustop independence layout <b>Enugu</b> <br>
+                                <!-- <a class="d-inline-block mt-30" href="#"><small><i class="fas fa-location"></i> Look at the map</small></a> -->
                             </div>
                         </div>
                         <div class="col-xl-3">
                             <div class="footer-top-text mb-50">
-                                <a href="callto:+61383766284">+61 3 8376 6284</a><br>
-                                <a href="mailto:info@dax.com">info@dax.com</a><br>
+                                <a href="callto:+234 809 164 7093">+234 809 164 7093</a><br>
+                                <!-- <a href="mailto:info@dax.com">info@dax.com</a><br> -->
+                                <a href>vatican.com</a><br>
                                 <a href="#" class="theme-btn style-two mt-35"><i class="fal fa-envelope"></i> Send a Message</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="footer-cta-wrap">
-                <div class="container">
-                    <div class="footer-cta-inner pt-115 rpt-0 pb-105 text-center">
-                        <h5>For more details, leave your phone number and we will be happy to answer all your questions.</h5>
-                        <form class="cta-form mt-40" action="#">
-                            <input type="tel" required placeholder="Tel.: +1  ( ___ ) ___ - __ - __">
-                            <button class="theme-btn style-three">More Details</button>
-                        </form>
-                    </div>
-                    <hr>
-                </div>
-            </div>
+            
             <div class="footer-bottom pt-100 pb-70">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-2 col-md-4">
-                            <div class="footer-logo mb-50">
-                                <a href="index.html"><img src="assets/images/logos/logo-two.png" alt="Logo"></a>
+                            <div class="footer-logo mb-50 text-center text-md-start">
+                                <a ><img style="height:85px;" src="assets/images/anew/vatican_logo_square.png" alt="Logo"></a>
                             </div>
                         </div>
                         <div class="col-xl-5 col-md-8">
-                            <div class="footer-text text-white mb-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus gravida quis blandit turpis cursus in hac habitasse platea.</div>
+                            <div class="footer-text text-white mb-50 text-center text-md-start">
+                                <b>Why Wait?</b> Your Dream Home Awaits!
+                                Don't miss out on exclusive listings and unbeatable deals.
+                                 Whether you're buying, selling, or investing, we make the process easy and hassle-free.</div>
                         </div>
                         <div class="col-xl-2 col-md-4">
-                            <div class="footer-social social-style-one mb-50">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
+                           <div class="footer-social text-center text-md-start">
+                                <div class="social-style-one mb-50">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                                </div>
+                           </div>
                         </div>
                         <div class="col-xl-3 col-md-8">
-                            <div class="copyright-area mb-50 text-xl-end">
-                                © 2023 DAX Residental Complex. All Rights Reserved / <a href="#">Privaci Policy</a> / <a href="#">Cookies</a>
+                            <div class="copyright-area mb-50 text-xl-end text-center text-md-start">
+                                <!-- © 2023 DAX Residental Complex. All Rights Reserved / <a href="#">Privaci Policy</a> / <a href="#">Cookies</a> -->
+                                 <p>© made by Gerald Devs</p>
                             </div>
                         </div>
                     </div>
