@@ -385,29 +385,39 @@
        When document is loaded, do
        ========================================================================== */
 
-    $(window).on('load', function () {
+    // $(window).on('load', function () {
 
-        // ## Preloader
-        function handlePreloader() {
-            if ($('.preloader').length) {
-                $('.preloader').delay(200).fadeOut(500);
-            }
-        }
-        handlePreloader();
+    //     // ## Preloader
+    //     function handlePreloader() {
+    //         if ($('.preloader').length) {
+    //             $('.preloader').delay(200).fadeOut(500);
+    //         }
+    //     }
+    //     handlePreloader();
 
 
-        // ## Blog Filtering
+    //     // ## Blog Filtering
+    //     if ($('.blog-active').length) {
+    //         $(this).imagesLoaded(function () {
+    //             $('.blog-active').isotope({
+    //                 // options
+    //                 itemSelector: '.item',
+    //             });
+    //         });
+    //     }
+
+
+    // });
+    $(document).ready(function () {
+        $('.preloader').fadeOut(300);
+    
         if ($('.blog-active').length) {
-            $(this).imagesLoaded(function () {
-                $('.blog-active').isotope({
-                    // options
-                    itemSelector: '.item',
-                });
+            $('.blog-active').isotope({
+                itemSelector: '.item',
             });
         }
-
-
     });
+    
 
 })(window.jQuery);
 
