@@ -35,32 +35,38 @@
         <link rel="stylesheet" href="assets/vendor/slick/css/slick.min.css">
         <!-- Main Style -->
         <link rel="stylesheet" href="assets/css/style.css">
+
         <style>
-        /* Custom styles */
-        .property-card {
-        margin-bottom: 2rem;
-        }
-        .property-features {
-        list-style-type: none;
-        padding-left: 0;
-        }
-        .property-features li::before {
-        content: "\2022";
-        color: #007bff;
-        display: inline-block;
-        width: 1em;
-        margin-left: -1em;
-        }
-        .features-image {
-        width: 80px;
-        margin-right: 10px;
-        vertical-align: middle;
-        }
-        .premium-features-container {
-        display: flex;
-        align-items: center;
-        }
+            /* Base styles for the slideshow area */
+            .slideshow-area {
+                width: 50%;              /* 50% of the parent's width */
+                max-width: 400px;        /* Maximum width on larger screens */
+                margin: 0 auto;          /* Center horizontally */
+                /* Optionally, control height using an aspect ratio if needed */
+            }
+
+            /* Make sure the images fill the container but keep their aspect ratio */
+            .slideshow-images {
+                width: 100%;
+                overflow: hidden;       /* Hide overflow if using object-fit or cropping */
+            }
+
+            .slideshow-images img {
+                width: 100%;            /* Image takes full container width */
+                height: auto;           /* Height adjusts automatically */
+                object-fit: cover;      /* Ensures the image fills the container (change to 'contain' if you prefer letterboxing) */
+            }
+
+            /* Responsive adjustments for smaller screens */
+            @media (max-width: 768px) {
+                .slideshow-area {
+                    width: 100%;         /* Wider relative to screen on smaller devices */
+                    max-width: none;     /* Remove max-width constraint */
+                }
+            }
+
         </style>
+        
 
     </head>
     <body>
@@ -358,8 +364,7 @@
                                                     </ul>
                                                 </div>
 
-                                                <div class="row gx-2 gy-2">
-                                                    <!-- Image 1 -->
+                                                <!-- <div class="row gx-2 gy-2">
                                                     <div
                                                         class="col-12 col-sm-6 col-md-4">
                                                         <img
@@ -367,7 +372,6 @@
                                                             alt="Feature 1"
                                                             class="img-fluid rounded">
                                                     </div>
-                                                    <!-- Image 2 -->
                                                     <div
                                                         class="col-12 col-sm-6 col-md-4">
                                                         <img
@@ -375,7 +379,6 @@
                                                             alt="Feature 2"
                                                             class="img-fluid rounded">
                                                     </div>
-                                                    <!-- Image 3 -->
                                                     <div
                                                         class="col-12 col-sm-6 col-md-4">
                                                         <img
@@ -383,7 +386,47 @@
                                                             alt="Feature 3"
                                                             class="img-fluid rounded">
                                                     </div>
+                                                </div> -->
+
+                                               
+                                                <!-- <div class="slideshow-area">
+                                                    <div class="container">
+                                                        <div class="slideshow-images">
+                                                            <img src="assets/images/anew/bungalow (3).png" alt="Slide Show">
+                                                            <img src="assets/images/anew/bungalow (4).png" alt="Slide Show">
+                                                            <img style="height: 160px;" src="assets/images/anew/BUNGALOW COLOUR PLAN_page-0001.jpg" alt="Slide Show">
+                                                        </div>
+                                                        <div class="navi-pagi-area" style="margin-top: 5px !important;">
+                                                            <button class="slideshow-prev"><i class="fal fa-long-arrow-left"></i></button>
+                                                            <button class="slideshow-next"><i class="fal fa-long-arrow-right"></i></button>
+                                                            <span class="slideshowpagi paginginfo"></span>
+                                                        </div>
+                                                    </div>
+                                                </div> -->
+
+
+                                                <div class="slideshow-area">
+                                                    <div class="container">
+                                                        <div class="slideshow-images">
+                                                            <a href="assets/images/anew/bungalow (3).png" class="popup-gallery">
+                                                                <img src="assets/images/anew/bungalow (3).png" alt="Slide Show">
+                                                            </a>
+                                                            <a href="assets/images/anew/bungalow (4).png" class="popup-gallery">
+                                                                <img src="assets/images/anew/bungalow (4).png" alt="Slide Show">
+                                                            </a>
+                                                            <a href="assets/images/anew/BUNGALOW COLOUR PLAN_page-0001.jpg" class="popup-gallery">
+                                                                <img style="height: 160px;" src="assets/images/anew/BUNGALOW COLOUR PLAN_page-0001.jpg" alt="Slide Show">
+                                                            </a>
+                                                        </div>
+                                                        <div class="navi-pagi-area" style="margin-top: 5px !important;">
+                                                            <button class="slideshow-prev"><i class="fal fa-long-arrow-left"></i></button>
+                                                            <button class="slideshow-next"><i class="fal fa-long-arrow-right"></i></button>
+                                                            <span class="slideshowpagi paginginfo"></span>
+                                                        </div>
+                                                    </div>
                                                 </div>
+                                                
+
 
                                             </div>
 
@@ -453,24 +496,8 @@
                                                         <li>Solar CCTV Camera</li>
                                                     </ul>
                                                 </div>
-                                                <!-- Small Images Side‑by‑Side with Gap -->
-                                                <!-- <div class="col-sm-10 d-flex justify-content-between">
-                                    <div class="p-1 w-50">
-                                        <img src="assets/images/anew/duplex3.png" alt="Feature 1"
-                                        class="img-fluid rounded">
-                                    </div>
-                                    <div class="p-1 w-50">
-                                    <img src="assets/images/anew/duplex4.png" alt="Feature 2"
-                                        class="img-fluid rounded">
-                                    </div>
-                                    <div class="p-1 w-50">
-                                        <img src="assets/images/anew/duplex5.png" alt="Feature 2"
-                                        class="img-fluid rounded">
-                                    </div>
-                                    
-                                </div> -->
-                                                <div class="row gx-2 gy-2">
-                                                    <!-- Image 1 -->
+ 
+                                                <!-- <div class="row gx-2 gy-2">
                                                     <div
                                                         class="col-12 col-sm-6 col-md-4">
                                                         <img
@@ -478,7 +505,6 @@
                                                             alt="Feature 1"
                                                             class="img-fluid rounded">
                                                     </div>
-                                                    <!-- Image 2 -->
                                                     <div
                                                         class="col-12 col-sm-6 col-md-4">
                                                         <img
@@ -486,7 +512,6 @@
                                                             alt="Feature 2"
                                                             class="img-fluid rounded">
                                                     </div>
-                                                    <!-- Image 3 -->
                                                     <div
                                                         class="col-12 col-sm-6 col-md-4">
                                                         <img
@@ -505,7 +530,33 @@
                                                             class="img-fluid rounded">
                                                     </div>
                                                 </div>
+                                            </div> -->
+
+                                            <div class="slideshow-area">
+                                                <div class="container">
+                                                    <div class="slideshow-images">
+                                                        <a href="assets/images/anew/duplex3.png" class="popup-gallery">
+                                                            <img src="assets/images/anew/duplex3.png" alt="Slide Show">
+                                                        </a>
+                                                        <a href="assets/images/anew/duplex4.png" class="popup-gallery">
+                                                            <img src="assets/images/anew/duplex4.png" alt="Slide Show">
+                                                        </a>
+                                                        <a href="assets/images/anew/duplex5.png" class="popup-gallery">
+                                                            <img src="assets/images/anew/duplex5.png" alt="Slide Show">
+                                                        </a>
+                                                        <a href="assets/images/anew/DUPLEX EDITED_page-0001.jpg" class="popup-gallery">
+                                                            <img src="assets/images/anew/DUPLEX EDITED_page-0001.jpg" alt="Slide Show">
+                                                        </a>
+                                                    </div>
+                                                    <div class="navi-pagi-area" style="margin-top: 5px !important;">
+                                                        <button class="slideshow-prev"><i class="fal fa-long-arrow-left"></i></button>
+                                                        <button class="slideshow-next"><i class="fal fa-long-arrow-right"></i></button>
+                                                        <span class="slideshowpagi paginginfo"></span>
+                                                    </div>
+                                                </div>
                                             </div>
+
+                                            
 
                                         </div>
                                     </div>
@@ -838,7 +889,7 @@
                                                     </ul>
                                                 </div>
 
-                                                <div class="row gx-2 gy-2">
+                                                <!-- <div class="row gx-2 gy-2">
                                                     <div
                                                         class="col-12 col-sm-6 col-md-4">
                                                         <img
@@ -854,6 +905,23 @@
                                                             class="img-fluid rounded">
                                                     </div>
                                                     
+                                                </div> -->
+                                                <div class="slideshow-area">
+                                                    <div class="container">
+                                                        <div class="slideshow-images">
+                                                            <a href="/assets/images/anew/5bedroomduplex.jpg" class="popup-gallery">
+                                                                <img src="/assets/images/anew/5bedroomduplex.jpg" alt="Slide Show">
+                                                            </a>
+                                                            <a href="/assets/images/anew/5bedroomduplexplan.jpg" class="popup-gallery">
+                                                                <img src="/assets/images/anew/5bedroomduplexplan.jpg" alt="Slide Show">
+                                                            </a>
+                                                        </div>
+                                                        <div class="navi-pagi-area" style="margin-top: 5px !important;">
+                                                            <button class="slideshow-prev"><i class="fal fa-long-arrow-left"></i></button>
+                                                            <button class="slideshow-next"><i class="fal fa-long-arrow-right"></i></button>
+                                                            <span class="slideshowpagi paginginfo"></span>
+                                                        </div>
+                                                    </div>
                                                 </div>
 
                                             </div>
@@ -919,7 +987,7 @@
                                                         </ul>
                                                     </div>
 
-                                                    <div class="row gx-2 gy-2">
+                                                    <!-- <div class="row gx-2 gy-2">
                                                         <div
                                                             class="col-12 col-sm-6 col-md-4">
                                                             <img
@@ -940,6 +1008,27 @@
                                                                 src="placeholder_feature_3.jpg"
                                                                 alt="Feature 3"
                                                                 class="img-fluid rounded">
+                                                        </div>
+                                                    </div> -->
+
+                                                    <div class="slideshow-area">
+                                                        <div class="container">
+                                                            <div class="slideshow-images">
+                                                                <a href="/assets/images/anew/4bedroomduplex.jpg" class="popup-gallery">
+                                                                    <img src="/assets/images/anew/4bedroomduplex.jpg" alt="Slide Show">
+                                                                </a>
+                                                                <a href="/assets/images/anew/4bedroomduplexplan.jpg" class="popup-gallery">
+                                                                    <img src="/assets/images/anew/4bedroomduplexplan.jpg" alt="Slide Show">
+                                                                </a>
+                                                                <a href="placeholder_feature_3.jpg" class="popup-gallery">
+                                                                    <img src="placeholder_feature_3.jpg" alt="Slide Show">
+                                                                </a>
+                                                            </div>
+                                                            <div class="navi-pagi-area" style="margin-top: 5px !important;">
+                                                                <button class="slideshow-prev"><i class="fal fa-long-arrow-left"></i></button>
+                                                                <button class="slideshow-next"><i class="fal fa-long-arrow-right"></i></button>
+                                                                <span class="slideshowpagi paginginfo"></span>
+                                                            </div>
                                                         </div>
                                                     </div>
 
@@ -1009,7 +1098,7 @@
                                                                     Floor</li>
                                                             </ul>
                                                         </div>
-
+<!-- 
                                                         <div class="row gx-2 gy-2">
                                                             <div
                                                                 class="col-12 col-sm-6 col-md-4">
@@ -1026,8 +1115,25 @@
                                                                     class="img-fluid rounded">
                                                             </div>
                                                             
-                                                        </div>
+                                                        </div> -->
 
+                                                        <div class="slideshow-area">
+                                                            <div class="container">
+                                                                <div class="slideshow-images">
+                                                                    <a href="/assets/images/anew/4bedroombungalowside.jpg" class="popup-gallery">
+                                                                        <img src="/assets/images/anew/4bedroombungalowside.jpg" alt="Slide Show">
+                                                                    </a>
+                                                                    <a href="/assets/images/anew/bungalowpln4.jpg" class="popup-gallery">
+                                                                        <img src="/assets/images/anew/bungalowpln4.jpg" alt="Slide Show">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="navi-pagi-area" style="margin-top: 5px !important;">
+                                                                    <button class="slideshow-prev"><i class="fal fa-long-arrow-left"></i></button>
+                                                                    <button class="slideshow-next"><i class="fal fa-long-arrow-right"></i></button>
+                                                                    <span class="slideshowpagi paginginfo"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
 
                                                 </div>
@@ -1100,7 +1206,7 @@
                                                                 </ul>
                                                             </div>
 
-                                                            <div
+                                                            <!-- <div
                                                                 class="row gx-2 gy-2">
                                                                 <div
                                                                     class="col-12 col-sm-6 col-md-4">
@@ -1117,6 +1223,23 @@
                                                                         class="img-fluid rounded">
                                                                 </div>
                                                                 
+                                                            </div> -->
+                                                            <div class="slideshow-area">
+                                                                <div class="container">
+                                                                    <div class="slideshow-images">
+                                                                        <a href="/assets/images/anew/3bedroombungalow.jpg" class="popup-gallery">
+                                                                            <img src="/assets/images/anew/3bedroombungalow.jpg" alt="Slide Show">
+                                                                        </a>
+                                                                        <a href="/assets/images/anew/3bedroombungalowplan.jpg" class="popup-gallery">
+                                                                            <img src="/assets/images/anew/3bedroombungalowplan.jpg" alt="Slide Show">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="navi-pagi-area" style="margin-top: 5px !important;">
+                                                                        <button class="slideshow-prev"><i class="fal fa-long-arrow-left"></i></button>
+                                                                        <button class="slideshow-next"><i class="fal fa-long-arrow-right"></i></button>
+                                                                        <span class="slideshowpagi paginginfo"></span>
+                                                                    </div>
+                                                                </div>
                                                             </div>
 
                                                         </div>
@@ -1196,7 +1319,7 @@
                                                                     </ul>
                                                                 </div>
 
-                                                                <div
+                                                                <!-- <div
                                                                     class="row gx-2 gy-2">
                                                                     <div
                                                                         class="col-12 col-sm-6 col-md-4">
@@ -1213,8 +1336,25 @@
                                                                             class="img-fluid rounded">
                                                                     </div>
                                                                     
-                                                                </div>
+                                                                </div> -->
 
+                                                                <div class="slideshow-area">
+                                                                    <div class="container">
+                                                                        <div class="slideshow-images">
+                                                                            <a href="/assets/images/anew/2bedroombungalow.jpg" class="popup-gallery">
+                                                                                <img src="/assets/images/anew/2bedroombungalow.jpg" alt="Slide Show">
+                                                                            </a>
+                                                                            <a href="/assets/images/anew/2bedroombungalowplan.jpg" class="popup-gallery">
+                                                                                <img src="/assets/images/anew/2bedroombungalowplan.jpg" alt="Slide Show">
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="navi-pagi-area" style="margin-top: 5px !important;">
+                                                                            <button class="slideshow-prev"><i class="fal fa-long-arrow-left"></i></button>
+                                                                            <button class="slideshow-next"><i class="fal fa-long-arrow-right"></i></button>
+                                                                            <span class="slideshowpagi paginginfo"></span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
                                                             </div>
 
                                                         </div>
@@ -1239,9 +1379,9 @@
                                                     <li>Increte compound</li>
                                                 </ul>
 
-                                                <h2 class="mt-4 mb-4">Building
-                                                    Options:
+                                                <h2 class="mt-4 mb-4">Building Options:</h2>
 
+                                                <ul>
                                                     <li>Turnkey</li>
                                                     <li>Advanced Carcass</li>
                                                     <li>Carcass</li>
@@ -1281,8 +1421,7 @@
                                     <section class="my-5">
                                         <div class="row">
                                             <div class="col-md-8 offset-md-2">
-                                                <h2 class="mb-4">5 Years Payment
-                                                    Plan Sample</h2>
+                                                <h2 class="mb-4">5 Years Payment Plan Sample</h2>
                                                 <div class="table-responsive">
                                                     <table
                                                         class="table table-bordered table-striped">
@@ -1659,6 +1798,21 @@
 
         </div>
                         <!--End pagewrapper-->
+                        <!-- <script>
+                            $(document).ready(function() {
+                                // Initialize Magnific Popup for gallery
+                                $('.popup-gallery').magnificPopup({
+                                    type: 'image',
+                                    gallery: {
+                                        enabled: true,
+                                        navigateByImgClick: true,
+                                        preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+                                    },
+                                    removalDelay: 300,
+                                    mainClass: 'mfp-fade'
+                                });
+                            });
+                        </script> -->
 
                         <!-- Jquery -->
                         <script
