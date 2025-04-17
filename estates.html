@@ -105,6 +105,43 @@
             background-color: #6c757d;
         }
     </style>
+
+    <style>
+        /* Responsive adjustments for the image max-width */
+        .w-md-80 {
+            max-width: 80%; /* Default for medium and larger screens */
+        }
+    
+        @media (max-width: 767.98px) { /* Small screens */
+            .w-md-80 {
+                max-width: 95%;
+            }
+        }
+    
+        @media (max-width: 575.98px) { /* Extra small screens */
+            .w-md-80 {
+                max-width: 100%;
+            }
+    
+            .carousel-control-prev {
+                left: 10px; /* Maintain some spacing on extra small screens */
+            }
+    
+            .carousel-control-next {
+                right: 10px; /* Maintain some spacing on extra small screens */
+            }
+        }
+    
+        /* Add some general horizontal spacing between the buttons */
+        .carousel-control-prev {
+            margin-right: 15px; /* Add space to the right of the previous button */
+        }
+    
+        .carousel-control-next {
+            margin-left: 15px; /* Add space to the left of the next button */
+        }
+    </style>
+    
     
 </head>
 <body>
@@ -251,218 +288,9 @@
         </section>
         
         
-        
-        <!-- Projects Area start -->
-        <!-- <section class="projects-area rel z-1 pt-115 pb-120">
-            <div class="container">
-                <div class="row justify-content-between pb-25">
-                    <div class="col-lg-12">
-                        <div class="section-title mb-35 wow fadeInUp delay-0-2s">
-                            <h2>Seattle</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row gap-40">
-                    <div class="col-xl-4 col-md-6">
-                        <div class="developer-item wow fadeInUp delay-0-2s">
-                            <img src="assets/images/developer/developer1.jpg" alt="Developer">
-                            <div class="developer-content">
-                                <div class="icon"><i class="fal fa-building"></i></div>
-                                <h3><a href="project-details.html">Tower Business Center</a></h3>
-                                <p>Volutpat diam ut venenatis tellus in metus vulputate. Phasellus egestas tellus rutrum tellus pellentesque eu. Condimentum vitae sapien pellentesque habitant morbi tristique.</p>
-                                <a class="details-btn" href="project-details.html"><i class="fal fa-long-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-6">
-                        <div class="developer-item wow fadeInUp delay-0-4s">
-                            <img src="assets/images/developer/developer2.jpg" alt="Developer">
-                            <div class="developer-content">
-                                <div class="icon"><i class="fal fa-warehouse"></i></div>
-                                <h3><a href="project-details.html">Kvartal <br>Residences</a></h3>
-                                <p>Volutpat diam ut venenatis tellus in metus vulputate. Phasellus egestas tellus rutrum tellus pellentesque eu. Condimentum vitae sapien pellentesque habitant morbi tristique.</p>
-                                <a class="details-btn" href="project-details.html"><i class="fal fa-long-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-6">
-                        <div class="developer-item wow fadeInUp delay-0-6s">
-                            <img src="assets/images/developer/developer3.jpg" alt="Developer">
-                            <div class="developer-content">
-                                <div class="icon"><i class="fal fa-gopuram"></i></div>
-                                <h3><a href="project-details.html">Premiumpark Residences</a></h3>
-                                <p>Volutpat diam ut venenatis tellus in metus vulputate. Phasellus egestas tellus rutrum tellus pellentesque eu. Condimentum vitae sapien pellentesque habitant morbi tristique.</p>
-                                <a class="details-btn" href="project-details.html"><i class="fal fa-long-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-6">
-                        <div class="developer-item wow fadeInUp delay-0-2s">
-                            <img src="assets/images/developer/developer4.jpg" alt="Developer">
-                            <div class="developer-content">
-                                <div class="icon"><i class="fal fa-house-flood"></i></div>
-                                <h3><a href="project-details.html">Grand Loft Business Center</a></h3>
-                                <p>Volutpat diam ut venenatis tellus in metus vulputate. Phasellus egestas tellus rutrum tellus pellentesque eu. Condimentum vitae sapien pellentesque habitant morbi tristique.</p>
-                                <a class="details-btn" href="project-details.html"><i class="fal fa-long-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-6">
-                        <div class="developer-item wow fadeInUp delay-0-4s">
-                            <img src="assets/images/developer/developer5.jpg" alt="Developer">
-                            <div class="developer-content">
-                                <div class="icon"><i class="fal fa-house-signal"></i></div>
-                                <h3><a href="project-details.html">Alexandria Residences</a></h3>
-                                <p>Volutpat diam ut venenatis tellus in metus vulputate. Phasellus egestas tellus rutrum tellus pellentesque eu. Condimentum vitae sapien pellentesque habitant morbi tristique.</p>
-                                <a class="details-btn" href="project-details.html"><i class="fal fa-long-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-6">
-                        <div class="developer-item wow fadeInUp delay-0-6s">
-                            <img src="assets/images/developer/developer6.jpg" alt="Developer">
-                            <div class="developer-content">
-                                <div class="icon"><i class="fal fa-laptop-house"></i></div>
-                                <h3><a href="project-details.html">Parkroyal Residences</a></h3>
-                                <p>Volutpat diam ut venenatis tellus in metus vulputate. Phasellus egestas tellus rutrum tellus pellentesque eu. Condimentum vitae sapien pellentesque habitant morbi tristique.</p>
-                                <a class="details-btn" href="project-details.html"><i class="fal fa-long-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12">
-                        <ul class="pagination mt-40 flex-wrap justify-content-center wow fadeInUp delay-0-2s">
-                            <li class="page-item active">
-                                <span class="page-link">
-                                    1
-                                    <span class="sr-only">(current)</span>
-                                </span>
-                            </li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item"><a class="page-link" href="#">4</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-        <!-- Projects Area end -->
+      
 
         <!-- estates section start -->
-
-        <!-- <section class="estate-section">
-            <div class="container py-5">
-              <h2 class="estate-title text-center">Canaan City Estate, Ituku Ozalla, Enugu</h2>
-              
-              <div class="row justify-content-center my-4">
-                <div class="col-md-6 col-lg-5">
-                  <img src="assets/images/anew/house10.jpg" class="img-fluid estate-img" alt="Canaan City Estate Image 1">
-                </div>
-                <div class="col-md-6 col-lg-5">
-                  <img src="assets/images/anew/house22.jpg" class="img-fluid estate-img" alt="Canaan City Estate Image 2">
-                </div>
-              </div>
-              
-              <p class="estate-description text-center">
-                Canaan City Estate is designed to offer a luxurious residential lifestyle and a vibrant commercial hub, ensuring safety and serenity. A perfect buy-and-build estate with immense investment potential.
-              </p>
-              
-              <div class="info-box">
-                <h4>Location & Neighborhood</h4>
-                <p>
-                  Located at Ituku Ozalla, opposite UNTH, along Enugu-Port Harcourt expressway, with neighboring landmarks:
-                </p>
-                <ul>
-                  <li>UNTH Enugu</li>
-                  <li>City of David Estate</li>
-                  <li>New Jerusalem Estate</li>
-                  <li>And many upcoming estates</li>
-                </ul>
-              </div>
-              
-              <div class="info-box">
-                <h4>Land Use</h4>
-                <p><strong>Residential</strong> | <strong>Commercial</strong></p>
-              </div>
-              
-              <div class="info-box">
-                <h4>Proposed Infrastructures</h4>
-                <ul>
-                  <li>Parameter fencing</li>
-                  <li>Good Road Network</li>
-                  <li>Solar street lamps & poles</li>
-                  <li>Electricity & electric poles</li>
-                  <li>24/7 Security Service</li>
-                  <li>Good Drainage System</li>
-                  <li>CCTV Cameras</li>
-                </ul>
-              </div>
-              
-              <div class="info-box">
-                <h4>Title & Pricing</h4>
-                <p><strong>Title:</strong> C of O</p>
-                <p><strong>Size:</strong> 460 sqm</p>
-                <p><strong>Selling Price:</strong> ₦10 million - outright (3 months installment available)</p>
-              </div>
-              
-              <div class="info-box">
-                <h4>Instant Allocation</h4>
-                <p>Allocation is instant upon full payment.</p>
-              </div>
-              
-              <div class="info-box">
-                <h4>All-Inclusive Price Covers</h4>
-                <ul>
-                  <li>Survey Fee</li>
-                  <li>Agreement</li>
-                  <li>Allocation</li>
-                  <li>Development Levy</li>
-                </ul>
-              </div>
-              
-              <div class="info-box">
-                <h4>What We Offer</h4>
-                <p>A perfect mix of residential and commercial ambiance with peace and serenity, making it a valuable investment.</p>
-              </div>
-            </div>
-          </section>
-          
-        <style>
-        .estate-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
-            font-weight: bold;
-            color: #2c3e50;
-            margin-bottom: 1rem;
-        }
-        .estate-img {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-            border-radius: 15px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-        }
-        .estate-description {
-            font-size: 1.2rem;
-            color: #555;
-            max-width: 800px;
-            margin: 0 auto 30px;
-        }
-        .info-box {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-        }
-        .info-box h4 {
-            color: #2c3e50;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        .info-box ul {
-            padding-left: 20px;
-        }
-        </style> -->
 
         <section class="estate-section container py-5 mb-50" >
             <!-- Estate Title -->
@@ -470,22 +298,67 @@
                 <h1 class="estate-title display-4 fw-bold mb-3">Canaan City Estate</h1>
                 <h2 class="h5 text-muted">Ituku Ozalla, Enugu</h2>
             </div>
+
+            <div id="estateCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+            
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center">
+                            <img src="assets/images/anew/canaanestate1.jpg"
+                                 class="d-block rounded shadow-sm w-md-80"
+                                 alt="Image 1"
+                                 style="height: 500px; object-fit: cover;">
+                        </div>
+                    </div>
+            
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <img src="assets/images/anew/canaanestate2.jpg"
+                                 class="d-block rounded shadow-sm w-md-80"
+                                 alt="Image 2"
+                                 style="height: 500px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <img src="assets/images/anew/canaanestate3.jpg"
+                                 class="d-block rounded shadow-sm w-md-80"
+                                 alt="Image 2"
+                                 style="height: 500px; object-fit: cover;">
+                        </div>
+                    </div>
+            
+                </div>
+            
+                <button class="carousel-control-prev" type="button" data-bs-target="#estateCarousel" data-bs-slide="prev" style="background-color: rgba(0, 0, 0, 0.5); border-radius: 50%; width: 40px; height: 40px; top: 50%; transform: translateY(-50%); left: 10px;">
+                    <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(100%);"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+            
+                <button class="carousel-control-next" type="button" data-bs-target="#estateCarousel" data-bs-slide="next" style="background-color: rgba(0, 0, 0, 0.5); border-radius: 50%; width: 40px; height: 40px; top: 50%; transform: translateY(-50%); right: 10px;">
+                    <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(100%);"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            
+            
+
         
-            <!-- Two Column Images -->
-            <div class="row g-4 mb-5">
+        
+            <!-- <div class="row g-4 mb-5">
                 <div class="col-md-6">
                     <img src="assets/images/anew/house10.jpg" 
                          class="img-fluid rounded-3 shadow-lg" 
                          alt="Canaan City Estate Exterior"
-                         style="height: 400px; object-fit: cover; width: 100%">
+                         style="height: 500px; object-fit: cover; width: 100%">
                 </div>
                 <div class="col-md-6">
                     <img src="assets/images/anew/house22.jpg" 
                          class="img-fluid rounded-3 shadow-lg" 
                          alt="Canaan City Estate Landscape"
-                         style="height: 400px; object-fit: cover; width: 100%">
+                         style="height: 500px; object-fit: cover; width: 100%">
                 </div>
-            </div>
+            </div> -->
         
             <!-- Property Information -->
             <div class="estate-info bg-light rounded-4 p-4 p-lg-5 shadow-sm">
@@ -568,7 +441,6 @@
             </div>
         </section>
 
-        
           
         <section class="estate-section container py-5 mb-50">
             <!-- Title Section -->
@@ -580,22 +452,65 @@
                     <div class="border-top border-primary border-2" style="width: 80px"></div>
                 </div>
             </div>
+            <!-- <div class="slideshow-area">
+                <div class="container">
+                    <div class="slideshow-images">
+                        <img src="assets/images/anew/house23.jpg" alt="Slide Show">
+                        <img src="assets/images/anew/4bedroomduplex.jpg" alt="Slide Show">
+                        <img src="assets/images/anew/4bedroombungalow.jpg" alt="Slide Show">
+                    </div>
+                    <div class="navi-pagi-area" style="margin-top: 5px !important;">
+                        <button class="slideshow-prev"><i class="fal fa-long-arrow-left"></i></button>
+                        <button class="slideshow-next"><i class="fal fa-long-arrow-right"></i></button>
+                        <span class="slideshowpagi paginginfo"></span>
+                    </div>
+                </div>
+            </div> -->
         
-            <!-- Two Images Grid -->
-            <div class="row g-4 mb-5">
-                <div class="col-md-6">
-                    <img src="assets/images/anew/house23.jpg" 
-                         class="img-fluid rounded-3 shadow-sm" 
-                         alt="Redan City Overview"
-                         style="height: 350px; object-fit: cover; width: 100%">
+            <div id="estateCarousel2" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+            
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center">
+                            <img src="assets/images/anew/house23.jpg"
+                                 class="d-block rounded shadow-sm w-md-80"
+                                 alt="Image 1"
+                                 style="height: 500px; object-fit: cover;">
+                        </div>
+                    </div>
+            
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <img src="assets/images/anew/4bedroomduplex.jpg"
+                                 class="d-block rounded shadow-sm w-md-80"
+                                 alt="Image 2"
+                                 style="height: 500px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <img src="assets/images/anew/4bedroombungalow.jpg"
+                                 class="d-block rounded shadow-sm w-md-80"
+                                 alt="Image 2"
+                                 style="height: 500px; object-fit: cover;">
+                        </div>
+                    </div>
+                   
+            
                 </div>
-                <div class="col-md-6">
-                    <img src="assets/images/anew/beautiful-architecture-building-seoul-city.jpg" 
-                         class="img-fluid rounded-3 shadow-sm" 
-                         alt="Redan City Infrastructure"
-                         style="height: 350px; object-fit: cover; width: 100%">
-                </div>
+            
+                <button class="carousel-control-prev" type="button" data-bs-target="#estateCarousel2" data-bs-slide="prev" style="background-color: rgba(0, 0, 0, 0.5); border-radius: 50%; width: 40px; height: 40px; top: 50%; transform: translateY(-50%); left: 10px;">
+                    <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(100%);"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+            
+                <button class="carousel-control-next" type="button" data-bs-target="#estateCarousel2" data-bs-slide="next" style="background-color: rgba(0, 0, 0, 0.5); border-radius: 50%; width: 40px; height: 40px; top: 50%; transform: translateY(-50%); right: 10px;">
+                    <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(100%);"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
+
+            
         
             <!-- Property Information -->
             <div class="estate-info bg-light rounded-4 p-4 p-lg-5">
@@ -721,7 +636,7 @@
             </div>
         </section>
         
-        
+
 
         <section class="estate-section container py-5 mb-50">
             <!-- Estate Title -->
@@ -729,21 +644,43 @@
                 <h1 class="estate-title display-4 fw-bold mb-3">Vatican Garden Estate Igbariam</h1>
                 <h2 class="h5 text-muted">Igbariam, Anambra</h2>
             </div>
+
+
         
-            <!-- Two Column Images -->
-            <div class="row g-4 mb-5">
-                <div class="col-md-6">
-                    <img src="assets/images/anew/house24.jpg" 
-                         class="img-fluid rounded-3 shadow-lg" 
-                         alt="Vatican Garden Estate Exterior"
-                         style="height: 400px; object-fit: cover; width: 100%">
+            <div id="estateCarousel3" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+            
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center">
+                            <img src="assets/images/anew/house24.jpg"
+                                 class="d-block rounded shadow-sm w-md-80"
+                                 alt="Image 1"
+                                 style="height: 500px; object-fit: cover;">
+                        </div>
+                    </div>
+            
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <img src="assets/images/anew/house19.jpg"
+                                 class="d-block rounded shadow-sm w-md-80"
+                                 alt="Image 2"
+                                 style="height: 500px; object-fit: cover;">
+                        </div>
+                    </div>
+                    
+                   
+            
                 </div>
-                <div class="col-md-6">
-                    <img src="assets/images/anew/house19.jpg" 
-                         class="img-fluid rounded-3 shadow-lg" 
-                         alt="Vatican Garden Estate Landscape"
-                         style="height: 400px; object-fit: cover; width: 100%">
-                </div>
+            
+                <button class="carousel-control-prev" type="button" data-bs-target="#estateCarousel3" data-bs-slide="prev" style="background-color: rgba(0, 0, 0, 0.5); border-radius: 50%; width: 40px; height: 40px; top: 50%; transform: translateY(-50%); left: 10px;">
+                    <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(100%);"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+            
+                <button class="carousel-control-next" type="button" data-bs-target="#estateCarousel3" data-bs-slide="next" style="background-color: rgba(0, 0, 0, 0.5); border-radius: 50%; width: 40px; height: 40px; top: 50%; transform: translateY(-50%); right: 10px;">
+                    <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(100%);"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         
             <!-- Property Information -->
@@ -825,9 +762,7 @@
                 </div>
             </div>
         </section>
-        
-        
-        
+  
         <!-- estatyes section end  -->
         
         

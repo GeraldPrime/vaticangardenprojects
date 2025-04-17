@@ -65,7 +65,42 @@
                 }
             }
 
+            /* Responsive adjustments for the image max-width */
+            .w-md-80 {
+                max-width: 80%; /* Default for medium and larger screens */
+            }
+        
+            @media (max-width: 767.98px) { /* Small screens */
+                .w-md-80 {
+                    max-width: 95%;
+                }
+            }
+        
+            @media (max-width: 575.98px) { /* Extra small screens */
+                .w-md-80 {
+                    max-width: 100%;
+                }
+        
+                .carousel-control-prev {
+                    left: 10px; /* Maintain some spacing on extra small screens */
+                }
+        
+                .carousel-control-next {
+                    right: 10px; /* Maintain some spacing on extra small screens */
+                }
+            }
+        
+            /* Add some general horizontal spacing between the buttons */
+            .carousel-control-prev {
+                margin-right: 15px; /* Add space to the right of the previous button */
+            }
+        
+            .carousel-control-next {
+                margin-left: 15px; /* Add space to the left of the next button */
+            }
+
         </style>
+       
         
 
     </head>
@@ -282,9 +317,130 @@
                 <section class="mb-5 text-center">
                     <h2 class="mb-3">Canaan City Estate Buildings</h2>
                     <p class="lead mb-4">Modern Smart Homes</p>
-                    <img src="assets/images/anew/house8.jpg"
+
+
+                    <!-- <div id="estateCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                      
+                          <div class="carousel-item active">
+                            <div class="row g-2">
+                              <div class="col-6">
+                                <img src="assets/images/anew/house8.jpg"
+                                     class="d-block w-100 rounded shadow-sm"
+                                     alt="House 1"
+                                     style="height: 400px; object-fit: cover;">
+                              </div>
+                              <div class="col-6">
+                                <img src="assets/images/anew/house9.jpg"
+                                     class="d-block w-100 rounded shadow-sm"
+                                     alt="House 2"
+                                     style="height: 400px; object-fit: cover;">
+                              </div>
+                            </div>
+                          </div>
+                      
+                          <div class="carousel-item">
+                            <div class="row g-2">
+                              <div class="col-6">
+                                <img src="assets/images/anew/house10.jpg"
+                                     class="d-block w-100 rounded shadow-sm"
+                                     alt="House 3"
+                                     style="height: 400px; object-fit: cover;">
+                              </div>
+                              <div class="col-6">
+                                <img src="assets/images/anew/house11.jpg"
+                                     class="d-block w-100 rounded shadow-sm"
+                                     alt="House 4"
+                                     style="height: 400px; object-fit: cover;">
+                              </div>
+                            </div>
+                          </div>
+                      
+                        </div>
+                      
+                        <button class="carousel-control-prev" type="button" data-bs-target="#estateCarousel" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#estateCarousel" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div> -->
+
+                    <!-- <div id="estateCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                    
+                            <div class="carousel-item active">
+                                <div class="d-flex justify-content-center">
+                                    <img src="assets/images/anew/house8.jpg"
+                                         class="d-block rounded shadow-sm"
+                                         alt="Image 1"
+                                         style="height: 400px; object-fit: cover; max-width: 80%;">
+                                </div>
+                            </div>
+                    
+                            <div class="carousel-item">
+                                <div class="d-flex justify-content-center">
+                                    <img src="assets/images/anew/house9.jpg"
+                                         class="d-block rounded shadow-sm"
+                                         alt="Image 2"
+                                         style="height: 400px; object-fit: cover; max-width: 80%;">
+                                </div>
+                            </div>
+                    
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#estateCarousel" data-bs-slide="prev" style="background-color: rgba(0, 0, 0, 0.5); border-radius: 50%; width: 40px; height: 40px; top: 50%; transform: translateY(-50%); left: 10px;">
+                            <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(100%);"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#estateCarousel" data-bs-slide="next" style="background-color: rgba(0, 0, 0, 0.5); border-radius: 50%; width: 40px; height: 40px; top: 50%; transform: translateY(-50%); right: 10px;">
+                            <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(100%);"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div> -->
+                      
+                    <div id="estateCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                    
+                            <div class="carousel-item active">
+                                <div class="d-flex justify-content-center">
+                                    <img src="assets/images/anew/house8.jpg"
+                                         class="d-block rounded shadow-sm w-md-80"
+                                         alt="Image 1"
+                                         style="height: 400px; object-fit: cover;">
+                                </div>
+                            </div>
+                    
+                            <div class="carousel-item">
+                                <div class="d-flex justify-content-center">
+                                    <img src="assets/images/anew/house9.jpg"
+                                         class="d-block rounded shadow-sm w-md-80"
+                                         alt="Image 2"
+                                         style="height: 400px; object-fit: cover;">
+                                </div>
+                            </div>
+                    
+                        </div>
+                    
+                        <button class="carousel-control-prev" type="button" data-bs-target="#estateCarousel" data-bs-slide="prev" style="background-color: rgba(0, 0, 0, 0.5); border-radius: 50%; width: 40px; height: 40px; top: 50%; transform: translateY(-50%); left: 10px;">
+                            <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(100%);"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                    
+                        <button class="carousel-control-next" type="button" data-bs-target="#estateCarousel" data-bs-slide="next" style="background-color: rgba(0, 0, 0, 0.5); border-radius: 50%; width: 40px; height: 40px; top: 50%; transform: translateY(-50%); right: 10px;">
+                            <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(100%);"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    
+                    
+
+                    
+                    <!-- <img src="assets/images/anew/house8.jpg"
                         alt="Canaan City Estate"
-                        class="img-fluid rounded shadow-sm mb-4">
+                        class="img-fluid rounded shadow-sm mb-4"> -->
+
                     <h4>Estate Facilities:</h4>
                     <ul class="list-unstyled property-features mb-3">
                         <li>Well Planned Estate Layout</li>
@@ -820,9 +976,45 @@
                         <div class="col-md-8 offset-md-2 text-center">
                             <h1 class="mb-4">Redan City Estate</h1>
                             <p class="lead mb-4">Southeast REDAN City</p>
-                            <img src="/assets/images/anew/house9.jpg"
+
+                            <div id="estateCarousel2" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                            
+                                    <div class="carousel-item active">
+                                        <div class="d-flex justify-content-center">
+                                            <img src="assets/images/anew/duplex5.png"
+                                                 class="d-block rounded shadow-sm w-md-80"
+                                                 alt="Image 1"
+                                                 style="height: 400px; object-fit: cover;">
+                                        </div>
+                                    </div>
+                            
+                                    <div class="carousel-item">
+                                        <div class="d-flex justify-content-center">
+                                            <img src="assets/images/anew/bungalow (9).png"
+                                                 class="d-block rounded shadow-sm w-md-80"
+                                                 alt="Image 2"
+                                                 style="height: 400px; object-fit: cover;">
+                                        </div>
+                                    </div>
+                            
+                                </div>
+                            
+                                <button class="carousel-control-prev" type="button" data-bs-target="#estateCarousel2" data-bs-slide="prev" style="background-color: rgba(0, 0, 0, 0.5); border-radius: 50%; width: 40px; height: 40px; top: 50%; transform: translateY(-50%); left: 10px;">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(100%);"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                            
+                                <button class="carousel-control-next" type="button" data-bs-target="#estateCarousel2" data-bs-slide="next" style="background-color: rgba(0, 0, 0, 0.5); border-radius: 50%; width: 40px; height: 40px; top: 50%; transform: translateY(-50%); right: 10px;">
+                                    <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(100%);"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+
+                            
+                            <!-- <img src="/assets/images/anew/house9.jpg"
                                 alt="Redan City Estate"
-                                class="img-fluid rounded shadow-sm mb-4">
+                                class="img-fluid rounded shadow-sm mb-4"> -->
                             <h4>Estate Facilities:</h4>
                             <ul class="list-unstyled property-features">
                                 <li>Well Planned Estate Layout</li>
